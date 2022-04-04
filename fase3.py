@@ -281,8 +281,6 @@ class Map():
         return index, index2
 
     def minimumPathBF(self , start, end):
-        """"calcula y devuelve la ruta mínima entre start y end, aplicando el algoritmo de 
-         Bellman-Ford. Puedes implementar otras funciones auxiliares si lo consideras necesario """
         """Regarding complexity: O(|V|*|E|) <---- worst case performance, where |V| := number of vertices, and 
         |E| := number of edges, expressed in terms of  the numbers of edges and vertices.
         The function is clearly O(n^3) as in the main part of Bellman-ford, by definition we must check a condition for 
@@ -345,9 +343,6 @@ class Map():
         return minimum_path, minimumDistance
 
     def minimumPathFW(self, start , end):
-        """"calcula y devuelve la ruta mínima entre start y end, aplicando el algoritmo de 
-         Floyd-Warshall. Puedes implementar otras funciones auxiliares si lo consideras necesario"""
-
         """Floyd-Warshall (G)
             Initialize
             Let D be the adjacency matrix (distances between vertices)
